@@ -1,0 +1,22 @@
+name: ${project.name}
+version: ${project.version}
+description: ${project.description}
+main: ${project.groupId}.${project.name}Plugin
+author: PureGero
+website: https://github.com/PureGero/timer-bossbar
+api-version: 1.20
+folia-supported: true
+commands:
+  timeremaining:
+    description: Check the remaining time on the countdown timer
+    permission: timerbossbar.timeremaining
+  timer:
+    description: Start a countdown timer with a bossbar
+    permission: timerbossbar.timer
+permissions:
+  timerbossbar.timeremaining:
+    description: Allows the use of the /timeremaining command
+    default: true
+  timerbossbar.timer:
+    description: Allows the use of the /timer command
+    default: op
