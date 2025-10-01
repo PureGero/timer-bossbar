@@ -16,6 +16,13 @@ Extra commands that shouldn't be needed, but are best to have just in case
 /timer setremainingtime <90m|30s>
 ```
 
+## Permissions
+
+```
+timerbossbar.timeremaining (default to all players)
+timerbossbar.start (default to op)
+```
+
 ## Building
 
 1. Enter the timer-bossbar directory and run:  
