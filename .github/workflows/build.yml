@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Git Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v5
       - name: Set up JDK
-        uses: actions/setup-java@v2.5.0
+        uses: actions/setup-java@v5
         with:
           java-version: '17'
           cache: 'maven'
@@ -17,7 +17,7 @@ jobs:
       - name: Build Jar
         run: mvn
       - name: Upload Jar
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: timer-bossbar.jar
           path: target/timer-bossbar-*.jar
